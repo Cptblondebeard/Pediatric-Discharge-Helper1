@@ -4,10 +4,10 @@ import {
   FilePlus, 
   History, 
   Settings, 
-  LogOut, 
-  Stethoscope 
+  LogOut
 } from "lucide-react";
 import { cn } from "@/lib/utils";
+import esicLogo from "@assets/Employee_State_Insurance_Corporation_Logo-1_1770966726583.png";
 
 export function Sidebar() {
   const [location] = useLocation();
@@ -15,16 +15,14 @@ export function Sidebar() {
   const navItems = [
     { href: "/", icon: LayoutDashboard, label: "Dashboard" },
     { href: "/new", icon: FilePlus, label: "New Summary" },
-    // { href: "/history", icon: History, label: "History" }, // Placeholder for future
+    { href: "/history", icon: History, label: "History" },
   ];
 
   return (
-    <div className="h-screen w-64 bg-white border-r border-border flex flex-col fixed left-0 top-0 z-10 shadow-xl shadow-black/5">
+    <div className="h-screen w-64 bg-white border-r border-border flex flex-col fixed left-0 top-0 z-10 shadow-xl shadow-black/5 lg:translate-x-0 -translate-x-full transition-transform duration-300 peer-data-[state=open]:translate-x-0">
       <div className="p-6 border-b border-border/50">
         <div className="flex items-center gap-3 text-primary">
-          <div className="p-2 bg-primary/10 rounded-lg">
-            <Stethoscope className="w-6 h-6" />
-          </div>
+          <img src={esicLogo} alt="ESIC Logo" className="w-10 h-10 object-contain" />
           <div>
             <h1 className="font-bold text-lg tracking-tight">ESIC Pediatrics</h1>
             <p className="text-xs text-muted-foreground font-medium">Discharge System</p>

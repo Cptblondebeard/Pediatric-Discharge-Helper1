@@ -13,6 +13,7 @@ function Router() {
     <Switch>
       <Route path="/" component={Home} />
       <Route path="/new" component={NewDischarge} />
+      <Route path="/history" component={Home} />
       <Route path="/discharge/:id" component={DischargeDetails} />
       <Route component={NotFound} />
     </Switch>

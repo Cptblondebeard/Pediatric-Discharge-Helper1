@@ -79,9 +79,9 @@ function PatientDetailsTab({ register, errors }: any) {
         <label className="text-sm font-medium text-slate-700">Unit of Admission *</label>
         <select {...register("unitOfAdmission")} className="input-field">
           <option value="">Select Unit</option>
-          <option value="Unit 1 - General Pediatrics">Unit 1 - General Pediatrics</option>
-          <option value="Unit 2 - Respiratory">Unit 2 - Respiratory</option>
-          <option value="Unit 3 - Neurology">Unit 3 - Neurology</option>
+          <option value="Unit 1">Unit 1</option>
+          <option value="Unit 2">Unit 2</option>
+          <option value="Unit 3">Unit 3</option>
           <option value="NICU">NICU</option>
           <option value="PICU">PICU</option>
         </select>
