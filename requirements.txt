@@ -1,0 +1,4 @@
+openai
+streamlit
+reportlab
+python-docx
